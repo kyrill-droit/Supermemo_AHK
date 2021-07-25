@@ -39,7 +39,7 @@ Send, {Enter}
 Sleep, 1000
 WinActivate, ahk_class TInputDlg
 WinWaitActive, ahk_class TInputDlg
-Send, 1-10 ; enter number of cards per day here
+Send, 1-10 ; enter elements of cards per day here
 Send, {Enter}
 WinWaitClose, ahk_class TInputDlg
 WinActivate, ahk_class TBrowser
