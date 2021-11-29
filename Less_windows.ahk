@@ -10,7 +10,7 @@ GroupAdd, SuperMemo, ahk_class TSMMain ;Toolbar
 
 #IfWinActive ahk_group SuperMemo
 
-^d:: ;Ctrl and d dismiss the item
+^d:: ;Ctrl and d dismiss an element
 Send, {Ctrl down}d{Ctrl up}
 WinActivate, ahk_class TMsgDialog
 WinWaitActive, ahk_class TMsgDialog
@@ -24,7 +24,7 @@ Sleep, 100
 Send, {Enter}
 return
 
-^+F12:: ; Ctrl, Shift and F12 clear formatting of an active part of an item
+^+F12:: ; Ctrl, Shift and F12 clear formatting of an active part of an element
 Send, {Ctrl down}{Shift down}{F12}{Ctrl up}{Shift up}
 Sleep, 100
 Send, y
