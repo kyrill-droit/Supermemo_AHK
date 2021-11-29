@@ -10,12 +10,12 @@ GroupAdd, SuperMemo, ahk_class TSMMain ;Toolbar
 
 #IfWinActive ahk_group SuperMemo
 
-Pause:: ;Pause stops omitting windows when auto-postpone applies to a leech item
+Pause:: ;Pause stops omitting windows when auto-postpone applies to a leech element
 Pause, On, 1
 MsgBox, Postpone deactivated.
 return
 
-+Pause:: ;any Shift and Pause runs start omitting windows when auto-postpone applies to a leech item
++Pause:: ;any Shift and Pause runs start omitting windows when auto-postpone applies to a leech element
 Pause, Off, 1
 MsgBox, Postpone (re)activated.
 Loop
